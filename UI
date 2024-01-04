@@ -79,7 +79,7 @@ local SidebarFrame = Instance.new("Frame")
 local Banner = Instance.new("Frame")
 local HappyGuy = Instance.new("ImageLabel")
 local VegaXLogo = Instance.new("ImageLabel")
-local TextLabel = Instance.new("TextLabel")
+local EULALabel = Instance.new("TextLabel")
 local ScrollingFrame_3 = Instance.new("ScrollingFrame")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local UsernamePlace = Instance.new("Frame")
@@ -122,7 +122,7 @@ local TextBox_2 = Instance.new("TextBox")
 local UICorner_30 = Instance.new("UICorner")
 local ApproveKeyB = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
-local EULALabel = Instance.new("TextLabel")
+local EULALabel_2 = Instance.new("TextLabel")
 local GetKeyB = Instance.new("TextButton")
 local UICorner_32 = Instance.new("UICorner")
 local JoinDiscordB = Instance.new("TextButton")
@@ -136,7 +136,6 @@ local IntroFrame = Instance.new("ImageLabel")
 local UICorner_35 = Instance.new("UICorner")
 local VegaXLogo_3 = Instance.new("ImageLabel")
 local CreditText = Instance.new("TextLabel")
-local FullBlack = Instance.new("Frame")
 local KSMenuToggleFrame = Instance.new("Frame")
 local UICorner_36 = Instance.new("UICorner")
 local VegaXKSToggle = Instance.new("TextButton")
@@ -841,21 +840,22 @@ VegaXLogo.Parent = Banner
 VegaXLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VegaXLogo.BackgroundTransparency = 1.000
 VegaXLogo.BorderSizePixel = 0
-VegaXLogo.Position = UDim2.new(0, 5, 0, 45)
+VegaXLogo.Position = UDim2.new(0, 10, 0, 50)
 VegaXLogo.Size = UDim2.new(0, 25, 0, 25)
 VegaXLogo.Image = "http://www.roblox.com/asset/?id=15861930865"
 
-TextLabel.Parent = Banner
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0, 70)
-TextLabel.Size = UDim2.new(1, 0, 0, 20)
-TextLabel.Font = Enum.Font.Gotham
-TextLabel.Text = "\"Everything is fined.\""
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 12.000
-TextLabel.TextWrapped = true
+EULALabel.Name = "EULALabel"
+EULALabel.Parent = Banner
+EULALabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EULALabel.BackgroundTransparency = 1.000
+EULALabel.BorderSizePixel = 0
+EULALabel.Position = UDim2.new(0, 40, 0, 50)
+EULALabel.Size = UDim2.new(0, 150, 0, 25)
+EULALabel.Font = Enum.Font.GothamBold
+EULALabel.Text = "Vega X 4.0"
+EULALabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+EULALabel.TextSize = 12.000
+EULALabel.TextXAlignment = Enum.TextXAlignment.Left
 
 ScrollingFrame_3.Parent = SidebarFrame
 ScrollingFrame_3.Active = true
@@ -930,7 +930,7 @@ Title_6.BorderSizePixel = 0
 Title_6.Position = UDim2.new(0, 62, 0, 10)
 Title_6.Size = UDim2.new(0.529999971, 0, 0.209999993, 20)
 Title_6.Font = Enum.Font.Gotham
-Title_6.Text = "Executor Window"
+Title_6.Text = "Executor"
 Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_6.TextSize = 14.000
 Title_6.TextWrapped = true
@@ -944,7 +944,7 @@ C1EB.BorderSizePixel = 0
 C1EB.Position = UDim2.new(0.5, 0, 1, -10)
 C1EB.Size = UDim2.new(1, -20, 0, 30)
 C1EB.Font = Enum.Font.GothamBold
-C1EB.Text = "Entrance"
+C1EB.Text = "Open"
 C1EB.TextColor3 = Color3.fromRGB(255, 255, 255)
 C1EB.TextSize = 14.000
 
@@ -986,7 +986,7 @@ Title_7.BorderSizePixel = 0
 Title_7.Position = UDim2.new(0, 62, 0, 10)
 Title_7.Size = UDim2.new(0.529999971, 0, 0.209999993, 20)
 Title_7.Font = Enum.Font.Gotham
-Title_7.Text = "Script Hub Window"
+Title_7.Text = "Script Hub"
 Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_7.TextSize = 14.000
 Title_7.TextWrapped = true
@@ -1000,7 +1000,7 @@ C2EB.BorderSizePixel = 0
 C2EB.Position = UDim2.new(0.5, 0, 1, -10)
 C2EB.Size = UDim2.new(1, -20, 0, 30)
 C2EB.Font = Enum.Font.GothamBold
-C2EB.Text = "Entrance"
+C2EB.Text = "Open"
 C2EB.TextColor3 = Color3.fromRGB(255, 255, 255)
 C2EB.TextSize = 14.000
 
@@ -1042,7 +1042,7 @@ Title_8.BorderSizePixel = 0
 Title_8.Position = UDim2.new(0, 62, 0, 10)
 Title_8.Size = UDim2.new(0.529999971, 0, 0.209999993, 20)
 Title_8.Font = Enum.Font.Gotham
-Title_8.Text = "Settings Window"
+Title_8.Text = "Settings"
 Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_8.TextSize = 14.000
 Title_8.TextWrapped = true
@@ -1056,7 +1056,7 @@ C3EB.BorderSizePixel = 0
 C3EB.Position = UDim2.new(0.5, 0, 1, -10)
 C3EB.Size = UDim2.new(1, -20, 0, 30)
 C3EB.Font = Enum.Font.GothamBold
-C3EB.Text = "Entrance"
+C3EB.Text = "Open"
 C3EB.TextColor3 = Color3.fromRGB(255, 255, 255)
 C3EB.TextSize = 14.000
 
@@ -1092,6 +1092,7 @@ VegaXMenuToggleFrame.BorderSizePixel = 0
 VegaXMenuToggleFrame.ClipsDescendants = true
 VegaXMenuToggleFrame.Position = UDim2.new(0, 104, 0, -32)
 VegaXMenuToggleFrame.Size = UDim2.new(0, 64, 0, 32)
+VegaXMenuToggleFrame.ZIndex = 10
 
 UICorner_28.CornerRadius = UDim.new(0, 10)
 UICorner_28.Parent = VegaXMenuToggleFrame
@@ -1102,6 +1103,7 @@ VegaXMenuToggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 VegaXMenuToggle.BackgroundTransparency = 1.000
 VegaXMenuToggle.BorderSizePixel = 0
 VegaXMenuToggle.Size = UDim2.new(0, 32, 0, 32)
+VegaXMenuToggle.ZIndex = 11
 VegaXMenuToggle.Font = Enum.Font.SourceSans
 VegaXMenuToggle.Text = ""
 VegaXMenuToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -1117,6 +1119,7 @@ ImageLabel_5.BackgroundTransparency = 1.000
 ImageLabel_5.BorderSizePixel = 0
 ImageLabel_5.Position = UDim2.new(0.5, 0, 0.5, 0)
 ImageLabel_5.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+ImageLabel_5.ZIndex = 11
 ImageLabel_5.Image = "http://www.roblox.com/asset/?id=15861930865"
 
 DragTouch.Name = "DragTouch"
@@ -1127,6 +1130,7 @@ DragTouch.BackgroundTransparency = 1.000
 DragTouch.BorderSizePixel = 0
 DragTouch.Position = UDim2.new(1, 0, 0, 0)
 DragTouch.Size = UDim2.new(0, 32, 0, 32)
+DragTouch.ZIndex = 11
 DragTouch.Image = "rbxassetid://3926307971"
 DragTouch.ImageRectOffset = Vector2.new(564, 364)
 DragTouch.ImageRectSize = Vector2.new(36, 36)
@@ -1146,7 +1150,7 @@ MainTitle.Parent = KeySystem
 MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MainTitle.BackgroundTransparency = 1.000
 MainTitle.BorderSizePixel = 0
-MainTitle.Position = UDim2.new(0, 7, 0, 78)
+MainTitle.Position = UDim2.new(0, 7, 0, 88)
 MainTitle.Size = UDim2.new(1, -14, 0, 21)
 MainTitle.Font = Enum.Font.GothamBold
 MainTitle.Text = "[Vega X] Key System"
@@ -1172,8 +1176,8 @@ TextBox_2.AnchorPoint = Vector2.new(0, 1)
 TextBox_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 TextBox_2.BackgroundTransparency = 0.200
 TextBox_2.BorderSizePixel = 0
-TextBox_2.Position = UDim2.new(0, 7, 1, -72)
-TextBox_2.Size = UDim2.new(1, -14, 0, 40)
+TextBox_2.Position = UDim2.new(0, 25, 1, -102)
+TextBox_2.Size = UDim2.new(1, -50, 0, 50)
 TextBox_2.ClearTextOnFocus = false
 TextBox_2.Font = Enum.Font.Code
 TextBox_2.MultiLine = true
@@ -1191,28 +1195,28 @@ ApproveKeyB.Active = false
 ApproveKeyB.AnchorPoint = Vector2.new(0.5, 1)
 ApproveKeyB.BackgroundColor3 = Color3.fromRGB(195, 57, 57)
 ApproveKeyB.BorderSizePixel = 0
-ApproveKeyB.Position = UDim2.new(0.5, 0, 1, -36)
-ApproveKeyB.Size = UDim2.new(0, 100, 0, 30)
+ApproveKeyB.Position = UDim2.new(0.5, 0, 1, -46)
+ApproveKeyB.Size = UDim2.new(0, 120, 0, 40)
 ApproveKeyB.Font = Enum.Font.GothamBold
-ApproveKeyB.Text = "Approve Key"
+ApproveKeyB.Text = "Check Key"
 ApproveKeyB.TextColor3 = Color3.fromRGB(255, 255, 255)
-ApproveKeyB.TextSize = 14.000
+ApproveKeyB.TextSize = 16.000
 
 UICorner_31.CornerRadius = UDim.new(0, 4)
 UICorner_31.Parent = ApproveKeyB
 
-EULALabel.Name = "EULALabel"
-EULALabel.Parent = KeySystem
-EULALabel.AnchorPoint = Vector2.new(0, 1)
-EULALabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EULALabel.BackgroundTransparency = 1.000
-EULALabel.BorderSizePixel = 0
-EULALabel.Position = UDim2.new(0, 7, 1, -10)
-EULALabel.Size = UDim2.new(1, -14, 0, 21)
-EULALabel.Font = Enum.Font.GothamBold
-EULALabel.Text = "By pressing \"Get Key\", you accept to the terms of the EULA stated in [INSERT EULA HERE]"
-EULALabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-EULALabel.TextSize = 12.000
+EULALabel_2.Name = "EULALabel"
+EULALabel_2.Parent = KeySystem
+EULALabel_2.AnchorPoint = Vector2.new(0, 1)
+EULALabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EULALabel_2.BackgroundTransparency = 1.000
+EULALabel_2.BorderSizePixel = 0
+EULALabel_2.Position = UDim2.new(0, 7, 1, -10)
+EULALabel_2.Size = UDim2.new(1, -14, 0, 21)
+EULALabel_2.Font = Enum.Font.GothamBold
+EULALabel_2.Text = "By pressing \"Get Key\", you accept to the terms of the EULA stated in [INSERT EULA HERE]"
+EULALabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+EULALabel_2.TextSize = 12.000
 
 GetKeyB.Name = "GetKeyB"
 GetKeyB.Parent = KeySystem
@@ -1221,12 +1225,12 @@ GetKeyB.AnchorPoint = Vector2.new(0.5, 1)
 GetKeyB.BackgroundColor3 = Color3.fromRGB(195, 57, 57)
 GetKeyB.BackgroundTransparency = 0.500
 GetKeyB.BorderSizePixel = 0
-GetKeyB.Position = UDim2.new(0.5, -105, 1, -36)
-GetKeyB.Size = UDim2.new(0, 100, 0, 30)
+GetKeyB.Position = UDim2.new(0.5, -125, 1, -46)
+GetKeyB.Size = UDim2.new(0, 120, 0, 40)
 GetKeyB.Font = Enum.Font.GothamBold
 GetKeyB.Text = "Get Key"
 GetKeyB.TextColor3 = Color3.fromRGB(255, 255, 255)
-GetKeyB.TextSize = 14.000
+GetKeyB.TextSize = 16.000
 
 UICorner_32.CornerRadius = UDim.new(0, 4)
 UICorner_32.Parent = GetKeyB
@@ -1237,12 +1241,12 @@ JoinDiscordB.Active = false
 JoinDiscordB.AnchorPoint = Vector2.new(0.5, 1)
 JoinDiscordB.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 JoinDiscordB.BorderSizePixel = 0
-JoinDiscordB.Position = UDim2.new(0.5, 105, 1, -36)
-JoinDiscordB.Size = UDim2.new(0, 100, 0, 30)
+JoinDiscordB.Position = UDim2.new(0.5, 125, 1, -46)
+JoinDiscordB.Size = UDim2.new(0, 120, 0, 40)
 JoinDiscordB.Font = Enum.Font.GothamBold
 JoinDiscordB.Text = "Join Discord"
 JoinDiscordB.TextColor3 = Color3.fromRGB(255, 255, 255)
-JoinDiscordB.TextSize = 14.000
+JoinDiscordB.TextSize = 16.000
 
 UICorner_33.CornerRadius = UDim.new(0, 4)
 UICorner_33.Parent = JoinDiscordB
@@ -1252,8 +1256,8 @@ Banner_2.Parent = KeySystem
 Banner_2.AnchorPoint = Vector2.new(0.5, 0)
 Banner_2.BackgroundColor3 = Color3.fromRGB(195, 57, 57)
 Banner_2.BorderSizePixel = 0
-Banner_2.Position = UDim2.new(0.5, 0, 0, 125)
-Banner_2.Size = UDim2.new(1, -10, 1, -245)
+Banner_2.Position = UDim2.new(0.5, 0, 0, 150)
+Banner_2.Size = UDim2.new(1, -50, 1, -315)
 
 VegaXLogo_2.Name = "VegaXLogo"
 VegaXLogo_2.Parent = Banner_2
@@ -1283,12 +1287,13 @@ SubTitle_5.Parent = KeySystem
 SubTitle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SubTitle_5.BackgroundTransparency = 1.000
 SubTitle_5.BorderSizePixel = 0
-SubTitle_5.Position = UDim2.new(0, 7, 0, 99)
-SubTitle_5.Size = UDim2.new(1, -14, 0, 21)
+SubTitle_5.Position = UDim2.new(0, 7, 0, 109)
+SubTitle_5.Size = UDim2.new(1, -14, 0, 40)
 SubTitle_5.Font = Enum.Font.Gotham
-SubTitle_5.Text = "Press the \"Get Key\" Button to start the Process."
+SubTitle_5.Text = "Press \"Get Key\" to get started!"
 SubTitle_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 SubTitle_5.TextSize = 14.000
+SubTitle_5.TextWrapped = true
 SubTitle_5.TextYAlignment = Enum.TextYAlignment.Top
 
 IntroFrame.Name = "IntroFrame"
@@ -1298,6 +1303,7 @@ IntroFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 IntroFrame.BackgroundTransparency = 1.000
 IntroFrame.Position = UDim2.new(0.5, 0, 0.5, -20)
 IntroFrame.Size = UDim2.new(1, 0, 1, 40)
+IntroFrame.ZIndex = 5
 IntroFrame.Image = "rbxassetid://3570695787"
 IntroFrame.ImageColor3 = Color3.fromRGB(195, 57, 57)
 IntroFrame.ImageTransparency = 1.000
@@ -1316,6 +1322,7 @@ VegaXLogo_3.BackgroundTransparency = 1.000
 VegaXLogo_3.BorderSizePixel = 0
 VegaXLogo_3.Position = UDim2.new(0.5, 0, 0.699999988, 0)
 VegaXLogo_3.Size = UDim2.new(0, 100, 0, 100)
+VegaXLogo_3.ZIndex = 7
 VegaXLogo_3.Image = "http://www.roblox.com/asset/?id=15861930865"
 VegaXLogo_3.ImageTransparency = 1.000
 
@@ -1327,20 +1334,12 @@ CreditText.BackgroundTransparency = 1.000
 CreditText.BorderSizePixel = 0
 CreditText.Position = UDim2.new(0.5, 0, 0.5, 0)
 CreditText.Size = UDim2.new(0, 300, 0, 30)
+CreditText.ZIndex = 7
 CreditText.Font = Enum.Font.Gotham
 CreditText.Text = "Welcome to Vega X!"
 CreditText.TextColor3 = Color3.fromRGB(255, 255, 255)
 CreditText.TextSize = 20.000
 CreditText.TextTransparency = 1.000
-
-FullBlack.Name = "FullBlack"
-FullBlack.Parent = IntroFrame
-FullBlack.AnchorPoint = Vector2.new(0.5, 0.5)
-FullBlack.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-FullBlack.BorderSizePixel = 0
-FullBlack.Position = UDim2.new(0.5, 0, 0.5, -20)
-FullBlack.Size = UDim2.new(1, 0, 1, 40)
-FullBlack.Visible = false
 
 KSMenuToggleFrame.Name = "KSMenuToggleFrame"
 KSMenuToggleFrame.Parent = VegaXAndroidUI
@@ -1349,8 +1348,9 @@ KSMenuToggleFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 KSMenuToggleFrame.BackgroundTransparency = 0.500
 KSMenuToggleFrame.BorderSizePixel = 0
 KSMenuToggleFrame.ClipsDescendants = true
-KSMenuToggleFrame.Position = UDim2.new(1, 0, 1, 0)
+KSMenuToggleFrame.Position = UDim2.new(1, -10, 1, -10)
 KSMenuToggleFrame.Visible = false
+KSMenuToggleFrame.ZIndex = 10
 
 UICorner_36.CornerRadius = UDim.new(0, 10)
 UICorner_36.Parent = KSMenuToggleFrame
@@ -1361,6 +1361,7 @@ VegaXKSToggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 VegaXKSToggle.BackgroundTransparency = 1.000
 VegaXKSToggle.BorderSizePixel = 0
 VegaXKSToggle.Size = UDim2.new(0, 32, 0, 32)
+VegaXKSToggle.ZIndex = 11
 VegaXKSToggle.Font = Enum.Font.SourceSans
 VegaXKSToggle.Text = ""
 VegaXKSToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -1376,11 +1377,12 @@ ImageLabel_6.BackgroundTransparency = 1.000
 ImageLabel_6.BorderSizePixel = 0
 ImageLabel_6.Position = UDim2.new(0.5, 0, 0.5, 0)
 ImageLabel_6.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+ImageLabel_6.ZIndex = 11
 ImageLabel_6.Image = "http://www.roblox.com/asset/?id=15861930865"
 
 -- Scripts:
 
-local function AYBD_fake_script() -- VegaXAndroidUI.MenuSystem 
+local function YUXX_fake_script() -- VegaXAndroidUI.MenuSystem 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local TweenService = game:GetService("TweenService")
@@ -1469,6 +1471,7 @@ local function AYBD_fake_script() -- VegaXAndroidUI.MenuSystem
 	end)
 	
 	script.Parent.ExecutorWindow.ExecuteB.MouseButton1Click:connect(function()
+		--print(script.Parent.ExecutorWindow.ScrollingBox.TextBox.Text)
 		executecode(script.Parent.ExecutorWindow.ScrollingBox.TextBox.Text)
 	end)
 	
@@ -1494,8 +1497,8 @@ local function AYBD_fake_script() -- VegaXAndroidUI.MenuSystem
 		script.Parent.SettingsWindow:TweenPosition(UDim2.new(1,200,0.5,-20), "Out", "Quint", 1, true)
 	end)
 end
-coroutine.wrap(AYBD_fake_script)()
-local function MOGPJ_fake_script() -- VegaXAndroidUI.DragIcon 
+coroutine.wrap(YUXX_fake_script)()
+local function GOESDT_fake_script() -- VegaXAndroidUI.DragIcon 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1538,8 +1541,8 @@ local function MOGPJ_fake_script() -- VegaXAndroidUI.DragIcon
 		end
 	end)
 end
-coroutine.wrap(MOGPJ_fake_script)()
-local function MCXJ_fake_script() -- VegaXAndroidUI.Loading 
+coroutine.wrap(GOESDT_fake_script)()
+local function WBJNI_fake_script() -- VegaXAndroidUI.Loading 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local valid_key = true
@@ -1622,8 +1625,8 @@ local function MCXJ_fake_script() -- VegaXAndroidUI.Loading
 	
 	
 end
-coroutine.wrap(MCXJ_fake_script)()
-local function OFEMM_fake_script() -- ScrollingFrame.CanvasAdjuster 
+coroutine.wrap(WBJNI_fake_script)()
+local function XLKYUSA_fake_script() -- ScrollingFrame.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1632,8 +1635,8 @@ local function OFEMM_fake_script() -- ScrollingFrame.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(OFEMM_fake_script)()
-local function HXGRH_fake_script() -- ScrollingFrame_2.CanvasAdjuster 
+coroutine.wrap(XLKYUSA_fake_script)()
+local function BPUYW_fake_script() -- ScrollingFrame_2.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1642,8 +1645,8 @@ local function HXGRH_fake_script() -- ScrollingFrame_2.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(HXGRH_fake_script)()
-local function LYMCQ_fake_script() -- ScriptHubWindow.ScriptBloxCode 
+coroutine.wrap(BPUYW_fake_script)()
+local function LVOVQG_fake_script() -- ScriptHubWindow.ScriptBloxCode 
 	local script = Instance.new('LocalScript', ScriptHubWindow)
 
 	ChosenColor = "#1890ff"
@@ -1828,8 +1831,8 @@ local function LYMCQ_fake_script() -- ScriptHubWindow.ScriptBloxCode
 		Search(script.Parent.SearchBox.Text)
 	end)
 end
-coroutine.wrap(LYMCQ_fake_script)()
-local function HUYD_fake_script() -- ScrollingBox.TextBoxCode 
+coroutine.wrap(LVOVQG_fake_script)()
+local function LKUCVLV_fake_script() -- ScrollingBox.TextBoxCode 
 	local script = Instance.new('LocalScript', ScrollingBox)
 
 	local TextBox = script.Parent.TextBox
@@ -1872,8 +1875,8 @@ local function HUYD_fake_script() -- ScrollingBox.TextBoxCode
 	    end
 	end)
 end
-coroutine.wrap(HUYD_fake_script)()
-local function QSJGYQX_fake_script() -- ExecutorWindow.TabbingWorker 
+coroutine.wrap(LKUCVLV_fake_script)()
+local function QCGYUEX_fake_script() -- ExecutorWindow.TabbingWorker 
 	local script = Instance.new('LocalScript', ExecutorWindow)
 
 	local scriptamt = 1
@@ -1921,8 +1924,8 @@ local function QSJGYQX_fake_script() -- ExecutorWindow.TabbingWorker
 		script.Parent.TabbingSystem.EditTabBox.Text = ""
 	end)
 end
-coroutine.wrap(QSJGYQX_fake_script)()
-local function WIWHG_fake_script() -- ScrollingFrame_3.CanvasAdjuster 
+coroutine.wrap(QCGYUEX_fake_script)()
+local function EEKBV_fake_script() -- ScrollingFrame_3.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame_3)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1931,8 +1934,8 @@ local function WIWHG_fake_script() -- ScrollingFrame_3.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(WIWHG_fake_script)()
-local function VAWZOL_fake_script() -- Icon.LocalScript 
+coroutine.wrap(EEKBV_fake_script)()
+local function ZFRMATH_fake_script() -- Icon.LocalScript 
 	local script = Instance.new('LocalScript', Icon)
 
 	-- From: https://www.youtube.com/watch?v=e4nBaHjr5Hw
@@ -1946,8 +1949,8 @@ local function VAWZOL_fake_script() -- Icon.LocalScript
 	script.Parent.Parent.Title.Text = "Hello!\n"..player.Name
 	script.Parent.ProfileImage.Image = plrAvatar
 end
-coroutine.wrap(VAWZOL_fake_script)()
-local function MOKJQ_fake_script() -- VegaXAndroidUI.SettingsSystem 
+coroutine.wrap(ZFRMATH_fake_script)()
+local function KKRZAWI_fake_script() -- VegaXAndroidUI.SettingsSystem 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	ChosenColor = "#C33939"
@@ -2010,4 +2013,4 @@ local function MOKJQ_fake_script() -- VegaXAndroidUI.SettingsSystem
 		setfpscap(60)
 	end)
 end
-coroutine.wrap(MOKJQ_fake_script)()
+coroutine.wrap(KKRZAWI_fake_script)()
