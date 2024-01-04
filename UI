@@ -1593,7 +1593,7 @@ local function GGRRS_fake_script() -- VegaXAndroidUI.Loading
 		print(readfile("vegax_key.txt"))
 	end
 	
-	if PandaAuth:ValidateKey(ServiceID, readfile("vegax_key.txt")) then
+	if PandaAuth:ValidateKey(ServiceID, "ruyi") then
 		script.Parent.KeySystem.Visible = false;
 		script.Parent.VegaXMenuToggleFrame.Visible = true;
 	
