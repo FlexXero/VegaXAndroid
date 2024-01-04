@@ -1382,7 +1382,7 @@ ImageLabel_6.Image = "http://www.roblox.com/asset/?id=15861930865"
 
 -- Scripts:
 
-local function TOHRTR_fake_script() -- VegaXAndroidUI.MenuSystem 
+local function IIDY_fake_script() -- VegaXAndroidUI.MenuSystem 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local TweenService = game:GetService("TweenService")
@@ -1498,8 +1498,8 @@ local function TOHRTR_fake_script() -- VegaXAndroidUI.MenuSystem
 		script.Parent.SettingsWindow:TweenPosition(UDim2.new(1,200,0.5,-20), "Out", "Quint", 1, true)
 	end)
 end
-coroutine.wrap(TOHRTR_fake_script)()
-local function EPIYCDP_fake_script() -- VegaXAndroidUI.DragIcon 
+coroutine.wrap(IIDY_fake_script)()
+local function OVYWRY_fake_script() -- VegaXAndroidUI.DragIcon 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1542,8 +1542,8 @@ local function EPIYCDP_fake_script() -- VegaXAndroidUI.DragIcon
 		end
 	end)
 end
-coroutine.wrap(EPIYCDP_fake_script)()
-local function NZETPC_fake_script() -- VegaXAndroidUI.Loading 
+coroutine.wrap(OVYWRY_fake_script)()
+local function GMSL_fake_script() -- VegaXAndroidUI.Loading 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	-- Key System Pre-Requisities
@@ -1645,8 +1645,8 @@ local function NZETPC_fake_script() -- VegaXAndroidUI.Loading
 	
 	
 end
-coroutine.wrap(NZETPC_fake_script)()
-local function FDJYBH_fake_script() -- ScrollingFrame.CanvasAdjuster 
+coroutine.wrap(GMSL_fake_script)()
+local function OHZD_fake_script() -- ScrollingFrame.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1655,8 +1655,8 @@ local function FDJYBH_fake_script() -- ScrollingFrame.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(FDJYBH_fake_script)()
-local function LGND_fake_script() -- ScrollingFrame_2.CanvasAdjuster 
+coroutine.wrap(OHZD_fake_script)()
+local function BHAKB_fake_script() -- ScrollingFrame_2.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1665,8 +1665,8 @@ local function LGND_fake_script() -- ScrollingFrame_2.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(LGND_fake_script)()
-local function FJQOA_fake_script() -- ScriptHubWindow.ScriptBloxCode 
+coroutine.wrap(BHAKB_fake_script)()
+local function WRDGMFZ_fake_script() -- ScriptHubWindow.ScriptBloxCode 
 	local script = Instance.new('LocalScript', ScriptHubWindow)
 
 	ChosenColor = "#1890ff"
@@ -1851,8 +1851,8 @@ local function FJQOA_fake_script() -- ScriptHubWindow.ScriptBloxCode
 		Search(script.Parent.SearchBox.Text)
 	end)
 end
-coroutine.wrap(FJQOA_fake_script)()
-local function WLUK_fake_script() -- ScrollingBox.TextBoxCode 
+coroutine.wrap(WRDGMFZ_fake_script)()
+local function NJMBBF_fake_script() -- ScrollingBox.TextBoxCode 
 	local script = Instance.new('LocalScript', ScrollingBox)
 
 	local TextBox = script.Parent.TextBox
@@ -1895,8 +1895,8 @@ local function WLUK_fake_script() -- ScrollingBox.TextBoxCode
 	    end
 	end)
 end
-coroutine.wrap(WLUK_fake_script)()
-local function BFVUKK_fake_script() -- ExecutorWindow.TabbingWorker 
+coroutine.wrap(NJMBBF_fake_script)()
+local function UJEF_fake_script() -- ExecutorWindow.TabbingWorker 
 	local script = Instance.new('LocalScript', ExecutorWindow)
 
 	local scriptamt = 1
@@ -1944,8 +1944,8 @@ local function BFVUKK_fake_script() -- ExecutorWindow.TabbingWorker
 		script.Parent.TabbingSystem.EditTabBox.Text = ""
 	end)
 end
-coroutine.wrap(BFVUKK_fake_script)()
-local function LGUIKH_fake_script() -- ScrollingFrame_3.CanvasAdjuster 
+coroutine.wrap(UJEF_fake_script)()
+local function TCBI_fake_script() -- ScrollingFrame_3.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame_3)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1954,8 +1954,8 @@ local function LGUIKH_fake_script() -- ScrollingFrame_3.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(LGUIKH_fake_script)()
-local function THBDHV_fake_script() -- Icon.LocalScript 
+coroutine.wrap(TCBI_fake_script)()
+local function VKWHW_fake_script() -- Icon.LocalScript 
 	local script = Instance.new('LocalScript', Icon)
 
 	-- From: https://www.youtube.com/watch?v=e4nBaHjr5Hw
@@ -1969,8 +1969,8 @@ local function THBDHV_fake_script() -- Icon.LocalScript
 	script.Parent.Parent.Title.Text = "Hello!\n"..player.Name
 	script.Parent.ProfileImage.Image = plrAvatar
 end
-coroutine.wrap(THBDHV_fake_script)()
-local function QHGR_fake_script() -- VegaXAndroidUI.SettingsSystem 
+coroutine.wrap(VKWHW_fake_script)()
+local function CAFDFOO_fake_script() -- VegaXAndroidUI.SettingsSystem 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	ChosenColor = "#C33939"
@@ -2001,7 +2001,7 @@ local function QHGR_fake_script() -- VegaXAndroidUI.SettingsSystem
 	
 	-- Set Color
 	
-	if isfile("theme_vegax_color.txt") == false then
+	if not isfile("theme_vegax_color.txt") then
 		writefile("theme_vegax_color.txt", "#C33939")
 	else
 		ChosenColor = readfile("theme_vegax_color.txt")
@@ -2033,4 +2033,4 @@ local function QHGR_fake_script() -- VegaXAndroidUI.SettingsSystem
 		setfpscap(60)
 	end)
 end
-coroutine.wrap(QHGR_fake_script)()
+coroutine.wrap(CAFDFOO_fake_script)()
