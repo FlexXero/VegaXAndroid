@@ -146,7 +146,6 @@ local ImageLabel_6 = Instance.new("ImageLabel")
 
 VegaXAndroidUI.Name = "VegaXAndroidUI"
 VegaXAndroidUI.Parent = game.CoreGui
-
 SettingsWindow.Name = "SettingsWindow"
 SettingsWindow.Parent = VegaXAndroidUI
 SettingsWindow.AnchorPoint = Vector2.new(0, 0.5)
@@ -1382,7 +1381,7 @@ ImageLabel_6.Image = "http://www.roblox.com/asset/?id=15861930865"
 
 -- Scripts:
 
-local function JGIKGZ_fake_script() -- VegaXAndroidUI.MenuSystem 
+local function RPDX_fake_script() -- VegaXAndroidUI.MenuSystem 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local TweenService = game:GetService("TweenService")
@@ -1498,8 +1497,8 @@ local function JGIKGZ_fake_script() -- VegaXAndroidUI.MenuSystem
 		script.Parent.SettingsWindow:TweenPosition(UDim2.new(1,200,0.5,-20), "Out", "Quint", 1, true)
 	end)
 end
-coroutine.wrap(JGIKGZ_fake_script)()
-local function TDMZK_fake_script() -- VegaXAndroidUI.DragIcon 
+coroutine.wrap(RPDX_fake_script)()
+local function XWOO_fake_script() -- VegaXAndroidUI.DragIcon 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1542,8 +1541,8 @@ local function TDMZK_fake_script() -- VegaXAndroidUI.DragIcon
 		end
 	end)
 end
-coroutine.wrap(TDMZK_fake_script)()
-local function OTUVW_fake_script() -- VegaXAndroidUI.Loading 
+coroutine.wrap(XWOO_fake_script)()
+local function CVUFZDT_fake_script() -- VegaXAndroidUI.Loading 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	-- Key System Pre-Requisities
@@ -1588,10 +1587,7 @@ local function OTUVW_fake_script() -- VegaXAndroidUI.Loading
 	wait(1)
 	
 	script.Parent.IntroFrame:Destroy()
-	
-	if isfile("vegax_key.txt") then
-		print(readfile("vegax_key.txt"))
-	end
+	getgenv().arceus = nil
 	
 	if PandaAuth:ValidateKey(PAServiceID, readfile("vegax_key.txt")) then
 		script.Parent.KeySystem.Visible = false;
@@ -1651,8 +1647,8 @@ local function OTUVW_fake_script() -- VegaXAndroidUI.Loading
 	
 	
 end
-coroutine.wrap(OTUVW_fake_script)()
-local function AZVK_fake_script() -- ScrollingFrame.CanvasAdjuster 
+coroutine.wrap(CVUFZDT_fake_script)()
+local function FJZWQHX_fake_script() -- ScrollingFrame.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1661,8 +1657,8 @@ local function AZVK_fake_script() -- ScrollingFrame.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(AZVK_fake_script)()
-local function ROKH_fake_script() -- ScrollingFrame_2.CanvasAdjuster 
+coroutine.wrap(FJZWQHX_fake_script)()
+local function GTGLJJ_fake_script() -- ScrollingFrame_2.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1671,8 +1667,8 @@ local function ROKH_fake_script() -- ScrollingFrame_2.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(ROKH_fake_script)()
-local function CZNQRBT_fake_script() -- ScriptHubWindow.ScriptBloxCode 
+coroutine.wrap(GTGLJJ_fake_script)()
+local function JFRFFRN_fake_script() -- ScriptHubWindow.ScriptBloxCode 
 	local script = Instance.new('LocalScript', ScriptHubWindow)
 
 	ChosenColor = "#1890ff"
@@ -1857,8 +1853,8 @@ local function CZNQRBT_fake_script() -- ScriptHubWindow.ScriptBloxCode
 		Search(script.Parent.SearchBox.Text)
 	end)
 end
-coroutine.wrap(CZNQRBT_fake_script)()
-local function SSNS_fake_script() -- ScrollingBox.TextBoxCode 
+coroutine.wrap(JFRFFRN_fake_script)()
+local function OYGPRW_fake_script() -- ScrollingBox.TextBoxCode 
 	local script = Instance.new('LocalScript', ScrollingBox)
 
 	local TextBox = script.Parent.TextBox
@@ -1901,8 +1897,8 @@ local function SSNS_fake_script() -- ScrollingBox.TextBoxCode
 	    end
 	end)
 end
-coroutine.wrap(SSNS_fake_script)()
-local function PEEJH_fake_script() -- ExecutorWindow.TabbingWorker 
+coroutine.wrap(OYGPRW_fake_script)()
+local function TATKDQ_fake_script() -- ExecutorWindow.TabbingWorker 
 	local script = Instance.new('LocalScript', ExecutorWindow)
 
 	local scriptamt = 1
@@ -1950,8 +1946,8 @@ local function PEEJH_fake_script() -- ExecutorWindow.TabbingWorker
 		script.Parent.TabbingSystem.EditTabBox.Text = ""
 	end)
 end
-coroutine.wrap(PEEJH_fake_script)()
-local function JBUSDH_fake_script() -- ScrollingFrame_3.CanvasAdjuster 
+coroutine.wrap(TATKDQ_fake_script)()
+local function VCSIC_fake_script() -- ScrollingFrame_3.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame_3)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1960,8 +1956,8 @@ local function JBUSDH_fake_script() -- ScrollingFrame_3.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(JBUSDH_fake_script)()
-local function QAAXIA_fake_script() -- Icon.LocalScript 
+coroutine.wrap(VCSIC_fake_script)()
+local function HFQXFQ_fake_script() -- Icon.LocalScript 
 	local script = Instance.new('LocalScript', Icon)
 
 	-- From: https://www.youtube.com/watch?v=e4nBaHjr5Hw
@@ -1975,8 +1971,8 @@ local function QAAXIA_fake_script() -- Icon.LocalScript
 	script.Parent.Parent.Title.Text = "Hello!\n"..player.Name
 	script.Parent.ProfileImage.Image = plrAvatar
 end
-coroutine.wrap(QAAXIA_fake_script)()
-local function PQUMPJ_fake_script() -- VegaXAndroidUI.SettingsSystem 
+coroutine.wrap(HFQXFQ_fake_script)()
+local function FDTT_fake_script() -- VegaXAndroidUI.SettingsSystem 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	ChosenColor = "#C33939"
@@ -2039,4 +2035,4 @@ local function PQUMPJ_fake_script() -- VegaXAndroidUI.SettingsSystem
 		setfpscap(60)
 	end)
 end
-coroutine.wrap(PQUMPJ_fake_script)()
+coroutine.wrap(FDTT_fake_script)()
