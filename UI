@@ -1382,7 +1382,7 @@ ImageLabel_6.Image = "http://www.roblox.com/asset/?id=15861930865"
 
 -- Scripts:
 
-local function IIDY_fake_script() -- VegaXAndroidUI.MenuSystem 
+local function YUMWI_fake_script() -- VegaXAndroidUI.MenuSystem 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local TweenService = game:GetService("TweenService")
@@ -1498,8 +1498,8 @@ local function IIDY_fake_script() -- VegaXAndroidUI.MenuSystem
 		script.Parent.SettingsWindow:TweenPosition(UDim2.new(1,200,0.5,-20), "Out", "Quint", 1, true)
 	end)
 end
-coroutine.wrap(IIDY_fake_script)()
-local function OVYWRY_fake_script() -- VegaXAndroidUI.DragIcon 
+coroutine.wrap(YUMWI_fake_script)()
+local function KHJJC_fake_script() -- VegaXAndroidUI.DragIcon 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1542,8 +1542,8 @@ local function OVYWRY_fake_script() -- VegaXAndroidUI.DragIcon
 		end
 	end)
 end
-coroutine.wrap(OVYWRY_fake_script)()
-local function GMSL_fake_script() -- VegaXAndroidUI.Loading 
+coroutine.wrap(KHJJC_fake_script)()
+local function AFBN_fake_script() -- VegaXAndroidUI.Loading 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	-- Key System Pre-Requisities
@@ -1555,8 +1555,9 @@ local function GMSL_fake_script() -- VegaXAndroidUI.Loading
 	
 	-- Multi-Language Key System Variables
 	local KSSubTitleNotif1 = "The Key System Link has been pasted into your Clipboard, insert it into your Browser (Desktop Recommended)."
-	local KSSubTitleNotif2 = "This key is not valid, go to our Discord Server for help."
+	local KSSubTitleNotif2 = "This key is not valid, go to our Discord Server if this is not correct."
 	local KSSubTitleNotif3 = "The Discord Link has been pasted into your Clipboard, insert it into the Discord app."
+	local KSSubTitleNotif4 = "This key is valid, enjoy Vega X!"
 	
 	-- Loading
 	
@@ -1622,6 +1623,7 @@ local function GMSL_fake_script() -- VegaXAndroidUI.Loading
 	script.Parent.KeySystem.ApproveKeyB.MouseButton1Click:connect(function()
 		if PandaAuth:ValidateKey(ServiceID, script.Parent.KeySystem.TextBox.Text) then
 			writefile("vegax_key.txt", script.Parent.KeySystem.TextBox.Text)
+			script.Parent.KeySystem.SubTitle.Text = KSSubTitleNotif4
 			
 			script.Parent.KeySystem:TweenPosition(UDim2.new(0, 0, 2, -20), "Out", "Quad", 1, true)
 	
@@ -1645,8 +1647,8 @@ local function GMSL_fake_script() -- VegaXAndroidUI.Loading
 	
 	
 end
-coroutine.wrap(GMSL_fake_script)()
-local function OHZD_fake_script() -- ScrollingFrame.CanvasAdjuster 
+coroutine.wrap(AFBN_fake_script)()
+local function ZVXD_fake_script() -- ScrollingFrame.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1655,8 +1657,8 @@ local function OHZD_fake_script() -- ScrollingFrame.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(OHZD_fake_script)()
-local function BHAKB_fake_script() -- ScrollingFrame_2.CanvasAdjuster 
+coroutine.wrap(ZVXD_fake_script)()
+local function YKRINK_fake_script() -- ScrollingFrame_2.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1665,8 +1667,8 @@ local function BHAKB_fake_script() -- ScrollingFrame_2.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(BHAKB_fake_script)()
-local function WRDGMFZ_fake_script() -- ScriptHubWindow.ScriptBloxCode 
+coroutine.wrap(YKRINK_fake_script)()
+local function QYGE_fake_script() -- ScriptHubWindow.ScriptBloxCode 
 	local script = Instance.new('LocalScript', ScriptHubWindow)
 
 	ChosenColor = "#1890ff"
@@ -1851,8 +1853,8 @@ local function WRDGMFZ_fake_script() -- ScriptHubWindow.ScriptBloxCode
 		Search(script.Parent.SearchBox.Text)
 	end)
 end
-coroutine.wrap(WRDGMFZ_fake_script)()
-local function NJMBBF_fake_script() -- ScrollingBox.TextBoxCode 
+coroutine.wrap(QYGE_fake_script)()
+local function GWDQZL_fake_script() -- ScrollingBox.TextBoxCode 
 	local script = Instance.new('LocalScript', ScrollingBox)
 
 	local TextBox = script.Parent.TextBox
@@ -1895,8 +1897,8 @@ local function NJMBBF_fake_script() -- ScrollingBox.TextBoxCode
 	    end
 	end)
 end
-coroutine.wrap(NJMBBF_fake_script)()
-local function UJEF_fake_script() -- ExecutorWindow.TabbingWorker 
+coroutine.wrap(GWDQZL_fake_script)()
+local function YDEFFO_fake_script() -- ExecutorWindow.TabbingWorker 
 	local script = Instance.new('LocalScript', ExecutorWindow)
 
 	local scriptamt = 1
@@ -1944,8 +1946,8 @@ local function UJEF_fake_script() -- ExecutorWindow.TabbingWorker
 		script.Parent.TabbingSystem.EditTabBox.Text = ""
 	end)
 end
-coroutine.wrap(UJEF_fake_script)()
-local function TCBI_fake_script() -- ScrollingFrame_3.CanvasAdjuster 
+coroutine.wrap(YDEFFO_fake_script)()
+local function AMSC_fake_script() -- ScrollingFrame_3.CanvasAdjuster 
 	local script = Instance.new('LocalScript', ScrollingFrame_3)
 
 	-- Credits: https://devforum.roblox.com/t/have-uilistlayout-set-the-canvassize-property-of-scrollingframes-automatically/76287
@@ -1954,8 +1956,8 @@ local function TCBI_fake_script() -- ScrollingFrame_3.CanvasAdjuster
 		script.Parent.CanvasSize = UDim2.new(0,0,0,script.Parent.UIListLayout.AbsoluteContentSize.Y)
 	end)
 end
-coroutine.wrap(TCBI_fake_script)()
-local function VKWHW_fake_script() -- Icon.LocalScript 
+coroutine.wrap(AMSC_fake_script)()
+local function SKGQ_fake_script() -- Icon.LocalScript 
 	local script = Instance.new('LocalScript', Icon)
 
 	-- From: https://www.youtube.com/watch?v=e4nBaHjr5Hw
@@ -1969,8 +1971,8 @@ local function VKWHW_fake_script() -- Icon.LocalScript
 	script.Parent.Parent.Title.Text = "Hello!\n"..player.Name
 	script.Parent.ProfileImage.Image = plrAvatar
 end
-coroutine.wrap(VKWHW_fake_script)()
-local function CAFDFOO_fake_script() -- VegaXAndroidUI.SettingsSystem 
+coroutine.wrap(SKGQ_fake_script)()
+local function TEDN_fake_script() -- VegaXAndroidUI.SettingsSystem 
 	local script = Instance.new('LocalScript', VegaXAndroidUI)
 
 	ChosenColor = "#C33939"
@@ -2033,4 +2035,4 @@ local function CAFDFOO_fake_script() -- VegaXAndroidUI.SettingsSystem
 		setfpscap(60)
 	end)
 end
-coroutine.wrap(CAFDFOO_fake_script)()
+coroutine.wrap(TEDN_fake_script)()
