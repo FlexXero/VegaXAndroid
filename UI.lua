@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local VegaXAndroidUI = Instance.new("ScreenGui")
 local SettingsWindow = Instance.new("Frame")
 local WindowMainTitle = Instance.new("TextLabel")
@@ -141,8 +136,6 @@ local UICorner_36 = Instance.new("UICorner")
 local VegaXKSToggle = Instance.new("TextButton")
 local UICorner_37 = Instance.new("UICorner")
 local ImageLabel_6 = Instance.new("ImageLabel")
-
---Properties:
 
 VegaXAndroidUI.Name = "VegaXAndroidUI"
 VegaXAndroidUI.Parent = game.CoreGui
